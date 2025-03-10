@@ -1,4 +1,4 @@
-/*
+/*Bahar Lawter. Initial commit 03/10/2025
 
 Overview
 In this activity, you will receive three short JavaScript programs,
@@ -26,7 +26,10 @@ Think about which debugging methods you found most useful and how you might appl
 
 console.log("Welcome to the bootcamp
 
-// What’s Wrong?
+// This is a syntax error. The string is not closed with the double quote symbol. It is also missing closing paranthesis. 
+
+// Correct code
+ console.log("Welcome to the bootcamp!");
 
 
 // Program B
@@ -40,7 +43,14 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 // What’s Wrong?
+//THis is a runtime error. The code is tring to multiply a number by a string. The string should be changed to a number 8
 
+//Correct code
+// //let numbers=[2,4,8];
+// for (let i = 0; i < numbers.length; i++) {
+//   let doubled = numbers[i] * 2;
+//   console.log(doubled);
+// }
 
 
 // Program C (Logic Error)
@@ -59,4 +69,12 @@ function isPrime(num) {
 
 console.log(isPrime(7)); // Expected true but gets false
 
-// What’s Wrong?
+// Program C is missing a "!" in the return statement. The return statement should be return false instead of return true."
+//Correct code
+ function isPrime(num){
+  if (num<2)returnfalse;
+  for (let i=2;i<num;i++){
+    if (num%i===0)return false}}
+    returntrue;
+    console.log(isPrime(7));
+
